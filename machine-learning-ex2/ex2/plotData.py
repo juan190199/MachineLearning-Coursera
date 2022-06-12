@@ -17,5 +17,3 @@ def plot_data(X, y):
     plt.scatter(X[pos, 0], X[pos, 1], marker='+', c='b')
     plt.scatter(X[neg, 0], X[neg, 1], marker='o', c='r')
 
-    plt.show()
-

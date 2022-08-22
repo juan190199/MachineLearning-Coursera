@@ -10,8 +10,8 @@ plt.ion()
 # Setup the parameters you will use for this part of the exercise
 input_layer_size = 400  # 20x20 input images of Digits
 hidden_layer_size = 25  # 25 hidden layers
-num_labels = 10         # 10 labels, from 0 to 9
-                        # Note that we have mapped "0" to label 10
+num_labels = 10  # 10 labels, from 0 to 9
+# Note that we have mapped "0" to label 10
 
 
 # ===================== Part 1: Loading and Visualizing Data =====================
@@ -53,9 +53,10 @@ theta2 = data['Theta2']
 
 pred = pd.predict(theta1, theta2, X)
 
-print('Training set accuracy: {}'.format(np.mean(pred == y)*100))
+print('Training set accuracy: {}'.format(np.mean(pred == y) * 100))
 
 input('Program paused. Press ENTER to continue')
+
 
 # To give you an idea of the network's output, you can also run
 # thru the examples one at a time to see what it is predicting
@@ -76,6 +77,7 @@ def getch():
         return ch
 
     return _getch()
+
 
 # Randomly permute examples
 rp = np.random.permutation(range(m))

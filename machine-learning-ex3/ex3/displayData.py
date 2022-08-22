@@ -40,5 +40,5 @@ def display_data(x):
 
     # Display image
     plt.figure()
-    plt.imshow(display_array, cmap='gray', extent=[-1, 1, -1, 1])
     plt.axis('off')
+    plt.imshow(display_array, cmap='gray', extent=[-1, 1, -1, 1])

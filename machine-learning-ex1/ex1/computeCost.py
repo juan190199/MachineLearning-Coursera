@@ -11,7 +11,6 @@ def compute_cost(X, y, theta):
     #                You should set the variable "cost" to the correct value.
 
 
-
     cost = np.sum((np.dot(X, theta) - y) ** 2) / (2 * m)
 
     return cost

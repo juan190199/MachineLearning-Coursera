@@ -10,6 +10,9 @@ __pycache__/
 ## Jupyter notebook ##
 *.ipynb_checkpoints
 
+## pdf's ##
+*.pdf
+
 ## pyenv & pipenv ##
 *.python-version
 Pipfile

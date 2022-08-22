@@ -19,6 +19,7 @@ plot_data(X, y)
 plt.xlabel('Microchip Test 1')
 plt.ylabel('Microchip Test 2')
 plt.legend(['y = 1', 'y = 0'])
+plt.show()
 
 input('Program paused. Press ENTER to continue')
 
@@ -83,14 +84,18 @@ initial_theta = np.zeros(X.shape[1])
 # Set regularization parameter lambda to 1 (you should vary this)
 lmd = 1
 
+
 # Optimize
 def cost_func(t):
     return cfr.cost_function_reg(t, X, y, lmd)[0]
 
+
 def grad_func(t):
     return cfr.cost_function_reg(t, X, y, lmd)[1]
 
-theta, cost, *unused = opt.fmin_bfgs(f=cost_func, fprime=grad_func, x0=initial_theta, maxiter=400, full_output=True, disp=False)
+
+theta, cost, *unused = opt.fmin_bfgs(f=cost_func, fprime=grad_func, x0=initial_theta, maxiter=400, full_output=True,
+                                     disp=False)
 
 # Plot boundary
 print('Plotting decision boundary ...')
@@ -99,6 +104,7 @@ plt.title('lambda = {}'.format(lmd))
 
 plt.xlabel('Microchip Test 1')
 plt.ylabel('Microchip Test 2')
+plt.show()
 
 # Compute accuracy on our training set
 p = predict.predict(theta, X)

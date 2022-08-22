@@ -23,6 +23,7 @@ plt.axis([30, 100, 30, 100])
 plt.legend(['Admitted', 'Not admitted'], loc=1)
 plt.xlabel('Exam 1 score')
 plt.ylabel('Exam 2 score')
+plt.show()
 
 input('Program paused. Press ENTER to continue')
 
@@ -87,6 +88,7 @@ pdb.plot_decision_boundary(theta, X, y)
 
 plt.xlabel('Exam 1 score')
 plt.ylabel('Exam 2 score')
+plt.show()
 
 input('Program paused. Press ENTER to continue')
 
